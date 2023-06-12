@@ -1,9 +1,9 @@
 ## Creating Resources
 
 <ul>
-<li>**terraform init** - to initialize the project (if not done already).</li>
-<li>**terraform plan** - to see the execution plan and check for any potential issues.</li>
-<li>**terraform apply** - to create the resources.</li>
-<li>**terraform destroy** - to delete the resources.</li>
-<li>**terraform apply --auto-approve** - to create the resources without approve.</li>
+<li><strong>terraform init</strong> - to initialize the project (if not done already).</li>
+<li><strong>terraform plan</strong> - to see the execution plan and check for any potential issues.</li>
+<li><strong>terraform apply</strong> - to create the resources.</li>
+<li><strong>terraform destroy</strong> - to delete the resources.</li>
+<li><strong>terraform apply --auto-approve</strong> - to create the resources without approve.</li>
 </ul>

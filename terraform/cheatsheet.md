@@ -4,7 +4,7 @@
 
 ## General Structure
 
-resource "<provider>\_<resource_type>" "name" {
+resource "\\<provider>\_<resource_type>" "name" {
 config options.....
 key = "value"
 key2 = "another value"

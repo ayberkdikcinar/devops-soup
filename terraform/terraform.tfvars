@@ -1,1 +1,0 @@
-availability_zone = "eu-east-1"

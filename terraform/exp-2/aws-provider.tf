@@ -1,30 +1,30 @@
 provider "aws" {
   access_key = "ACCESS_KEY"
   secret_key = "SECRET_KEY"
-  region = "eu-central-1"
+  region     = "eu-central-1"
 }
 
 resource "aws_vpc" "my-first-vpc" {
   cidr_block = "10.0.0.0/16"
-  tags={
+  tags = {
     Name = "dev"
   }
 }
 
-resource "aws_subnet" "my-first-subnet"{
-  vpc_id = aws_vpc.my-first-vpc.id
+resource "aws_subnet" "my-first-subnet" {
+  vpc_id     = aws_vpc.my-first-vpc.id
   cidr_block = "10.0.1.0/24"
   tags = {
-      Name = "dev-subnet"
+    Name = "dev-subnet"
   }
 }
 
 resource "aws_instance" "my-first-ec2" {
-  ami = "ami-0abcdef1234567890"
-  subnet_id = aws_subnet.my-first-subnet.id
+  ami           = "ami-0abcdef1234567890"
+  subnet_id     = aws_subnet.my-first-subnet.id
   instance_type = "m2.micro"
   tags = {
-    Name= "web-server"
+    Name = "web-server"
   }
 }
 
@@ -42,7 +42,7 @@ resource "aws_vpc" "prod-vpc" {
 
 # # 2. Create Internet Gateway
 resource "aws_internet_gateway" "gw" {
-vpc_id = aws_vpc.prod-vpc.id
+  vpc_id = aws_vpc.prod-vpc.id
 }
 
 # # 3. Create Custom Route Table
@@ -62,9 +62,9 @@ resource "aws_route_table" "prod-route-table" {
   tags = {
     Name = "Prod"
   }
-  }
+}
 
-  # # 4. Create a Subnet 
+# # 4. Create a Subnet 
 resource "aws_subnet" "subnet-1" {
   vpc_id            = aws_vpc.prod-vpc.id
   cidr_block        = "10.0.1.0/24"
@@ -156,7 +156,7 @@ resource "aws_instance" "web-server-instance" {
   network_interface {
     device_index         = 0
     network_interface_id = aws_network_interface.web-server-nic.id
-}
+  }
 
   user_data = <<-EOF
                 #!/bin/bash
@@ -181,7 +181,7 @@ output "server_private_ip" {
 #Defining variables
 
 #if we do not provide a value
-variable "availability_zone"{
+variable "availability_zone" {
   description = "it is default az"
   #type= string #any
   #default= "default_value"

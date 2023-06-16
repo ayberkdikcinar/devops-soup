@@ -4,9 +4,16 @@ This cheatsheet provides an overview of commonly used AWS compute services.
 
 ## Amazon EC2 (Elastic Compute Cloud)
 
-- Virtual servers in the cloud.
+- Virtual machines (servers) in the cloud.
 - Choose from various instance types based on your needs.
 - Provides complete control over your virtual machines.
+
+## Amazon LightSail
+
+- Easiest way to have a virtual server and managing it on aws.
+- Fixed price package that includes virtual machine, SSD based storage, DNS Management and static IP.
+- Like a hosting providers (hostinger, godady etc).
+- If your only need is using some virtual machine on the aws platform. That is what you need.
 
 ## Amazon ECS (Elastic Container Service)
 
@@ -20,38 +27,35 @@ This cheatsheet provides an overview of commonly used AWS compute services.
 
 ## AWS Lambda
 
+[AWS Lambda](https://aws.amazon.com/lambda/)
+
 - Serverless compute service.
 - Runs your code without provisioning or managing servers.
 - Pay only for the compute time consumed.
+- You can run it for almost everything. Just upload your code and left the rest to the aws Lambda.
+- You can set them for automatic runs or you can call them from your application.
 
 ## AWS Batch
+
+[What is batch Processing?](https://aws.amazon.com/what-is/batch-processing/)
 
 - Fully managed batch processing service.
 - Run large-scale batch computing workloads.
 - Automatically scales resources based on workload demands.
+
+## AWS Elastic Beanstalk
+
+[Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)
+
+- Platform as a Service (PaaS) offering.
+- Deploy, manage, and scale applications easily. (Similar to Heroku)
+- Supports various programming languages and platforms.
 
 ## AWS Fargate
 
 - Serverless compute engine for containers.
 - Runs containers without managing the underlying infrastructure.
 - Pay only for the resources consumed by your containers.
-
-## AWS Elastic Beanstalk
-
-- Platform as a Service (PaaS) offering.
-- Deploy, manage, and scale applications easily.
-- Supports various programming languages and platforms.
-
-## AWS Auto Scaling
-
-- Automatically adjusts the number of instances based on application demand.
-- Helps maintain application availability and optimize costs.
-
-## AWS Step Functions
-
-- Serverless workflow service.
-- Coordinate and visualize distributed applications and microservices.
-- Provides visual workflows for building complex, multistep processes.
 
 ## AWS App Runner
 

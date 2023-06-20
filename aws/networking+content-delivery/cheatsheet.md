@@ -51,3 +51,9 @@
 - Directs traffic from public subnets to the internet.
 - Routes traffic from private subnets through NAT devices.
 - Associated with each subnet within the VPC.
+
+## Internet Gateway
+
+- Provides connectivity between your VPC and the internet.
+
+Acts as a bridge between your VPC and the internet, facilitating communication and enabling resources within your VPC to be publicly accessible. It's important to configure appropriate security measures to control access and be aware of any associated costs.

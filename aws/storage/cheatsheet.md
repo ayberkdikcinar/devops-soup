@@ -16,7 +16,7 @@ There are two different storage as Object based and Block based.
 
 - Object based storage.
 - 5TB limit for 1 file. (There is no limit for file count.)
-- Buckets are the containers for the objects. (Region Based)
+- Buckets are the containers for the objects. (Region Based) AND Bucket names should be unique.
 - When you store an object, it keeps the metadata that includes some information like content-length, created_at.
 
 ## AWS EFS (Elastic File System)

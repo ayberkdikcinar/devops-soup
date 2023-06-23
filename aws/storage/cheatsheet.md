@@ -30,6 +30,7 @@ There are two different storage as Object based and Block based.
 
 - Long term data archiving & data backup.
 - We can keep data here that doesn't have to be used frequently.
+- Retrieving files from this service takes at least 2-3 hours.
 
 ## AWS Storage Gateway
 

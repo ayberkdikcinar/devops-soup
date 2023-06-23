@@ -18,6 +18,8 @@ There are two different storage as Object based and Block based.
 - 5TB limit for 1 file. (There is no limit for file count.)
 - Buckets are the containers for the objects. (Region Based) AND Bucket names should be unique.
 - When you store an object, it keeps the metadata that includes some information like content-length, created_at.
+- For controlling access to bucket, policies are used. Example policy for public access to bucket from everywhere can be found under assets file.
+- There are some different storage tiers that suits specific purposes for the S3. Storage tiers list can be found under assets file.
 
 ## AWS EFS (Elastic File System)
 

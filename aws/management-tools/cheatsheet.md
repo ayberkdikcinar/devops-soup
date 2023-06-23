@@ -22,6 +22,10 @@ Amazon CloudTrail is a service provided by Amazon Web Services (AWS) that enable
 
 - Visibility and Governance: CloudTrail helps you gain visibility into the activity occurring across your AWS resources and accounts. It provides an audit trail that allows you to track changes, investigate security incidents, perform forensic analysis, and meet compliance requirements.
 
+## AWS Trusted Advisor
+
+AWS Trusted Advisor provides recommendations that help you follow AWS best practices. Trusted Advisor evaluates your account by using checks. These checks identify ways to optimize your AWS infrastructure, improve security and performance, reduce costs, and monitor service quotas. You can then follow the recommendations to optimize your services and resources.
+
 ## Amazon CloudFormation
 
 ## AWS AutoScaling

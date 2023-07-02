@@ -7,6 +7,7 @@ This cheatsheet provides an overview of commonly used AWS compute services.
 - Virtual machines (servers) in the cloud.
 - Choose from various instance types based on your needs.
 - Provides complete control over your virtual machines.
+- [Here is the link for ec2 instance families comperision site](https://ec2instances.info).
 
 ## Amazon LightSail
 

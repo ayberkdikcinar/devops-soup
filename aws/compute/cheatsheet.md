@@ -9,6 +9,15 @@ This cheatsheet provides an overview of commonly used AWS compute services.
 - Provides complete control over your virtual machines.
 - [Here is the link for ec2 instance families comperision site](https://ec2instances.info).
 
+# Placement Group:
+
+EC2 Instances that runs on the same pyhsical machine for the high throughput and low latency. (*All instances should be created with the same image,
+*Add all the machines on the first time, do not alter any machine after creation.)
+
+# Auto Scaling Group:
+
+An Auto Scaling group is a collection of Amazon EC2 instances that are treated as a logical unit. You configure settings for a group and its instances as well as define the group’s minimum, maximum, and desired capacity. Setting different minimum and maximum capacity values forms the bounds of the group, which allows the group to scale as the load on your application spikes higher or lower, based on demand. To scale the Auto Scaling group, you can either make manual adjustments to the desired capacity or let Amazon EC2 Auto Scaling automatically add and remove capacity to meet changes in demand.
+
 ## Amazon LightSail
 
 - Easiest way to have a virtual server and managing it on aws.

@@ -51,9 +51,31 @@
 - Directs traffic from public subnets to the internet.
 - Routes traffic from private subnets through NAT devices.
 - Associated with each subnet within the VPC.
+- Automatically created when VPC created.
 
 ## Internet Gateway
 
 - Provides connectivity between your VPC and the internet.
 
 Acts as a bridge between your VPC and the internet, facilitating communication and enabling resources within your VPC to be publicly accessible. It's important to configure appropriate security measures to control access and be aware of any associated costs.
+
+## Security Group
+
+- Resource (EC2 Instances, RDS Instances etc.) level security.
+
+## Network ACL (Access Control List)
+
+- Subnet level security.
+- Each subnet has to be attached to 1 Network ACL.
+- You can attach different subnets into same Network ACL.
+
+## Endpoints
+
+- Provides quick connection from the internal network instead of going to the Internet for the determined endpoints.
+- We can do it for aws services, privateLink Ready partner services, aws marketplace services etc.
+
+## Peering Connection
+
+- Enables connectivity between two VPCs in the same or different AWS accounts.
+- The VPCs must not have overlapping IP address ranges.
+- After creation, Route tables should be properly configured to allow traffic between peered VPCs.

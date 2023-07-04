@@ -25,6 +25,12 @@ There are two different storage as Object based and Block based.
 
 - Object based storage.
 - Automatically scales down itself based on the requirements. Scale up when needed. Thanks to that, it optimizes storage size for the applications.
+- It can be reached by multiple EC2 instances simultaniously.
+- You can connect it from NFS (2049) port.
+
+### Example Usage:
+
+Think that you have an e-commerce application that runs on multiple instances. One day you changed the application code, normally you should go all the instances one by one and update the application. Hovewer, if you put the application code into EFS, you can manage it centrally, that means you do not have to update one by one.
 
 ## Amazon Glacier
 

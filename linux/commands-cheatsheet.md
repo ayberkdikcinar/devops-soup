@@ -42,6 +42,23 @@
 - `du` - Shows disk usage of a file or directory.
 - `du -sh` - Shows summary in human-readable format.
 
+## File Viewing
+
+- `cat file` - Outputs the entire file content.
+- `more file` - Outputs the file content page by page.
+- `less file` - Similar to `more`, but allows backward navigation in the file as well.
+- `head file` - Shows the first 10 lines of a file.
+- `tail file` - Shows the last 10 lines of a file.
+
+## Searching
+
+- `grep pattern file` - Search for pattern within file.
+- `grep -r pattern dir` - Search recursively for pattern in dir.
+- `find /dir -name file` - Find directories or files named file under directory dir.
+- `find /dir -user name` - Find files owned by user 'name' under directory dir.
+- `find /dir -mmin num` - Find files modified within 'num' minutes under directory dir.
+- `find /dir -size +1G` - Find files larger than 1 Gigabyte under directory dir.
+
 ## File Compression and Decompression
 
 ### tar

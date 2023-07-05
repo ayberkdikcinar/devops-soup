@@ -8,18 +8,22 @@ const kafka = new Kafka({
 const topic = "Test";
 const consumer = kafka.consumer({ groupId: "test-group" });
 
-const run = async () => {
-  await consumer.connect();
-  await consumer.subscribe({ topic, fromBeginning: true });
-  await consumer.run({
-    // eachBatch: async ({ batch }) => {
-    //   console.log(batch)
-    // },
-    eachMessage: async ({ topic, partition, message }) => {
-      const prefix = `${topic}[${partition} | ${message.offset}] / ${message.timestamp}`;
-      console.log(`- ${prefix} # Message: ${message.value}`);
-    },
-  });
+const consume = async () => {
+  try {
+    await consumer.connect();
+    await consumer.subscribe({ topic, fromBeginning: true });
+    await consumer.run({
+      // eachBatch: async ({ batch }) => {
+      //   console.log(batch)
+      // },
+      eachMessage: async ({ topic, partition, message }) => {
+        const prefix = `${topic}[${partition} | ${message.offset}] / ${message.timestamp}`;
+        console.log(`- ${prefix} # Message: ${message.value}`);
+      },
+    });
+  } catch (error) {
+    console.error(`[example/consumer] ${error}`);
+  }
 };
 
-run().catch((e) => console.error(`[example/consumer] ${e.message}`, e));
+consume();

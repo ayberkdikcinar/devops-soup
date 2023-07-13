@@ -4,6 +4,7 @@
 
 - Relational Database. (SQL)
 - Aurora(MySQL), Aurora(PostgreSQL), MySQL, PostgreSQL, MariaDB, Oracle, MicrosoftSQL Server
+- [Here is the SQL Basics Cheatsheet](https://learnsql.com/blog/sql-basics-cheat-sheet/sql-basics-cheat-sheet-a4.pdf)
 
 ### Multi-AZ
 
@@ -22,6 +23,10 @@
 ## Amazon DynamoDB
 
 - Non Relational Database (NoSQL)
+- Infrastructure of the DynamoDB managed by AWS.
+- 1 write capacity = 1kb
+- 1 read capacity = 1kb x 2
+- DAX ?? Caching cluster,(in-memory caching). Faster read/write.
 
 ## Amazon ElastiCache
 
@@ -34,6 +39,6 @@
 
 ## Amazon Redshift
 
-[What is data warehouse?](https://aws.amazon.com/data-warehouse/)
-
+- [What is data warehouse?](https://aws.amazon.com/data-warehouse/)
 - Data warehouse service.
+- OLAP (Online analytical processing)

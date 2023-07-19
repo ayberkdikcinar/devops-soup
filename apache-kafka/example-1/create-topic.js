@@ -1,24 +1,24 @@
-const { Kafka } = require("kafkajs");
+const { Kafka } = require('kafkajs');
 
 const kafka = new Kafka({
-  clientId: "client_1",
-  brokers: ["localhost:9092"],
+  clientId: 'client_1',
+  brokers: ['localhost:9092'],
 });
 
 async function createTopic() {
   try {
     const admin = kafka.admin();
     await admin.connect();
-    console.log("Connected.");
+    console.log('Connected.');
     await admin.createTopics({
       topics: [
         {
-          topic: "Test",
-          numPartitions: 1,
+          topic: 'TestWPart1',
+          numPartitions: 3,
         },
       ],
     });
-    console.log("topic created");
+    console.log('topic created');
   } catch (error) {
     console.log(error);
   }

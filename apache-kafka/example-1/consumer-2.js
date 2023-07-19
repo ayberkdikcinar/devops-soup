@@ -5,7 +5,7 @@ const kafka = new Kafka({
   clientId: "client_1",
 });
 
-const topic = "Test-2";
+const topic = "TestWPart1";
 const consumer = kafka.consumer({ groupId: "test-group-2" });
 
 const consume = async () => {

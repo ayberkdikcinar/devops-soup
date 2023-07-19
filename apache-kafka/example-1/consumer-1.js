@@ -1,12 +1,12 @@
-const { Kafka } = require("kafkajs");
+const { Kafka } = require('kafkajs');
 
 const kafka = new Kafka({
   brokers: [`localhost:9092`],
-  clientId: "client_1",
+  clientId: 'client_1',
 });
 
-const topic = "TestWPart1";
-const consumer = kafka.consumer({ groupId: "test-group-0" });
+const topic = 'TestWPart1';
+const consumer = kafka.consumer({ groupId: 'test-group-1' });
 
 const consume = async () => {
   try {

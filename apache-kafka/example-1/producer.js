@@ -5,7 +5,7 @@ const kafka = new Kafka({
   clientId: "client_1",
 });
 
-const topic = "Test";
+const topic = "Test-2";
 const producer = kafka.producer();
 
 const produce = async () => {
@@ -16,8 +16,28 @@ const produce = async () => {
       topic: topic,
       messages: [
         {
-          value: "Hello, this message comes from the producer.",
+          value: "Kullanıcı oluşturuldu",
           partition: 0,
+        },
+        {
+          value: "Hello, this message comes from the producer Part:0",
+          partition: 0,
+        },
+        {
+          value: "Hello, this message comes from the producer Part:0",
+          partition: 0,
+        },
+        {
+          value: "Hello, this message comes from the producer Part:0",
+          partition: 0,
+        },
+        {
+          value: "Hello, this message comes from the producer Part:1",
+          partition: 1,
+        },
+        {
+          value: "Hello, this message comes from the producer Part:1",
+          partition: 1,
         },
       ],
     });

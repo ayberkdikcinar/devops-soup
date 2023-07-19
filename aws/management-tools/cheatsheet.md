@@ -13,7 +13,7 @@ Amazon CloudWatch is a **monitoring and observability** service offered by AWS. 
 - Container Insights: Enhanced monitoring for containerized applications.
 - Integration: Works with other AWS services like CloudTrail and X-Ray.
 - Cross-Account and Cross-Region Monitoring: Monitor multiple accounts and regions.
-
+- Note: Memory metrics for ec2 is not available.
 ## Amazon CloudTrail
 
 Amazon CloudTrail is a service provided by Amazon Web Services (AWS) that enables you to monitor and log API activity and account-related events within your AWS infrastructure. It records and stores a history of actions taken by users, services, and resources, providing an audit trail for security analysis, compliance, and troubleshooting purposes.

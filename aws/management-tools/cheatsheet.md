@@ -30,7 +30,6 @@ AWS Trusted Advisor provides recommendations that help you follow AWS best pract
 ## Amazon CloudFormation
 
 
-
 ## AWS AutoScaling
 
 ## AWS Config

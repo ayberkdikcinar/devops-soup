@@ -79,3 +79,7 @@ Acts as a bridge between your VPC and the internet, facilitating communication a
 - Enables connectivity between two VPCs in the same or different AWS accounts.
 - The VPCs must not have overlapping IP address ranges.
 - After creation, Route tables should be properly configured to allow traffic between peered VPCs.
+
+
+## Network Interfaces
+

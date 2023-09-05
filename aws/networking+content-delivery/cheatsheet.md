@@ -17,6 +17,13 @@
 
 - It is a [DNS](https://www.cdnetworks.com/web-performance-blog/what-is-a-dns-server/) service.
 
+### DNS Basic Record Types
+- A:
+- CNAME:
+- SOA:
+- NS:
+- Alias(Specific to the Route53): 
+
 ## Amazon API Gateway
 
 - Amazon API Gateway allows you to create RESTful APIs and WebSocket APIs to provide access to your backend services, such as AWS Lambda functions, AWS Step Functions, or HTTP endpoints. It acts as a front door for your applications, allowing you to control access, apply security measures, and monitor usage.

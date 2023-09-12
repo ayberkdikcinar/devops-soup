@@ -17,6 +17,9 @@
 
 - It is a [DNS](https://www.cdnetworks.com/web-performance-blog/what-is-a-dns-server/) service.
 
+### TTL (Time To Live) value
+- Value in seconds. it caches the data for the domain and wont ask for data from the domain server until the time expires.
+
 ### DNS Basic Record Types
 - A:
 - CNAME:

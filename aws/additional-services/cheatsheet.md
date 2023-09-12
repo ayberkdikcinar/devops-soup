@@ -88,3 +88,24 @@ AWS Config primarily focuses on tracking and monitoring the configurations of yo
 - OpsWorks is a configuration management service that helps you automate server provisioning and application deployment.
 
 **Chef and Puppet**: Supported automation frameworks for defining configurations.
+
+
+## AWS Directory Service
+
+AWS Directory Service provides multiple directory choices for customers who want to use existing Microsoft AD or Lightweight Directory Access Protocol (LDAP)–aware applications in the cloud. It also offers those same choices to developers who need a directory to manage users, groups, devices, and access.
+
+[Link](https://aws.amazon.com/directoryservice/)
+
+## AWS Snowball
+
+It is a physical tool that have phsyical disks inside it. It provide us to transfer data to the aws (Even petabytes of data).
+
+[Link](https://aws.amazon.com/snowball/)
+
+## AWS Storage Gateway
+
+
+[Link](https://aws.amazon.com/storagegateway/)
+
+
+## AWS Organizations

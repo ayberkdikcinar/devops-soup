@@ -18,14 +18,16 @@
 - It is a [DNS](https://www.cdnetworks.com/web-performance-blog/what-is-a-dns-server/) service.
 
 ### TTL (Time To Live) value
+
 - Value in seconds. it caches the data for the domain and wont ask for data from the domain server until the time expires.
 
 ### DNS Basic Record Types
-- A:
-- CNAME:
-- SOA:
-- NS:
-- Alias(Specific to the Route53): 
+
+- A: Address Record - Maps a domain name to an IPv4 address.
+- CNAME: Canonical Name Record - Creates an alias for a domain name, pointing to another domain's A or AAAA record.
+- SOA: Start of Authority Record - Contains authoritative information about a DNS zone, including the primary name server and administrator contact information.
+- NS: Specifies the authoritative name servers for a domain, delegating DNS resolution to those servers.
+- Alias(Specific to the Route53): This is a record type unique to Amazon Route 53 called "Alias Record." It functions similarly to a CNAME but can be used for specific AWS resources like S3 buckets, CloudFront distributions, and Elastic Beanstalk environments. It allows you to map a domain or subdomain to these AWS resources.
 
 ## Amazon API Gateway
 
@@ -90,6 +92,4 @@ Acts as a bridge between your VPC and the internet, facilitating communication a
 - The VPCs must not have overlapping IP address ranges.
 - After creation, Route tables should be properly configured to allow traffic between peered VPCs.
 
-
 ## Network Interfaces
-

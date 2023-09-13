@@ -3,16 +3,20 @@
 ## Amazon SQS (Simple Queue Service)
 
 ### What is SQS?
+
 - SQS is a managed service for sending and receiving messages between different parts of your application.
 
 ### Key Concepts:
+
 1. **Queue**: A virtual location where messages are temporarily stored.
 2. **Message**: Information sent between components of your application.
 3. **Producer**: Part of your application that sends messages to a queue.
 4. **Consumer**: Part of your application that reads messages from a queue.
 
 ### Types of Queues:
+
 1. **Standard Queue**:
+
    - Offers at-least-once delivery (messages might be duplicated).
    - Doesn't guarantee message order.
    - Provides high throughput.
@@ -23,6 +27,7 @@
    - Limited throughput (up to 300 transactions per second).
 
 ### Key Operations:
+
 - **Create Queue**: Make a new queue with a unique name.
 - **Send Message**: Add a message to a queue.
 - **Receive Message**: Get messages from a queue.
@@ -31,6 +36,7 @@
 - **Long Polling**: Efficiently wait for new messages without continuous polling.
 
 ### Important Features:
+
 - **Dead Letter Queue**: Store messages that couldn't be processed for error handling.
 - **Message Attributes**: Attach metadata to messages.
 - **Message Deduplication**: Prevent duplicates in FIFO queues.
@@ -40,21 +46,25 @@
 ## Amazon SNS (Simple Notification Service)
 
 ### What is SNS?
+
 - SNS is a managed service for sending messages or notifications to a distributed set of subscribers.
 - It is a Push based notification service.
 
 ### Key Concepts:
+
 1. **Topic**: A communication channel for sending messages.
 2. **Publisher**: Part of your application that sends messages to a topic.
 3. **Subscriber**: Part of your application that receives messages from a topic.
 
 ### Key Operations:
+
 - **Create Topic**: Establish a new topic with a unique name.
 - **Subscribe**: Add endpoints (like email, SMS, or Lambda functions) to a topic.
 - **Publish**: Send a message to a topic.
 - **Unsubscribe**: Remove endpoints from a topic.
 
 ### Important Features:
+
 - **Subscriptions**: Multiple subscribers can get messages from a single topic.
 - **Message Filtering**: Control which messages go to specific subscribers using filter policies.
 - **Fanout**: Send the same message to multiple subscribers simultaneously.
@@ -63,12 +73,9 @@
 - **Message Retention**: Decide how long messages are retained in a topic.
 - **Integration with EventBridge**: Connect SNS with AWS EventBridge for event-driven architectures.
 
-
 ## Kinesis
 
-
 ## AWS SWF (Simple Workflow Service)
-
 
 ## AWS KMS (Key Management Service)
 
@@ -89,7 +96,6 @@ AWS Config primarily focuses on tracking and monitoring the configurations of yo
 
 **Chef and Puppet**: Supported automation frameworks for defining configurations.
 
-
 ## AWS Directory Service
 
 AWS Directory Service provides multiple directory choices for customers who want to use existing Microsoft AD or Lightweight Directory Access Protocol (LDAP)–aware applications in the cloud. It also offers those same choices to developers who need a directory to manage users, groups, devices, and access.
@@ -104,8 +110,13 @@ It is a physical tool that have phsyical disks inside it. It provide us to trans
 
 ## AWS Storage Gateway
 
-
 [Link](https://aws.amazon.com/storagegateway/)
 
-
 ## AWS Organizations
+
+Management for multiple( maybe hundreds) aws accounts.
+
+- Creation and deletion of the aws accounts can be automatized.
+- Limitation of the operations for the aws accounts via Service Control Policies (SCP)
+- Grouping for the aws accounts that have similar limitations.
+- Consolidated billing for all aws accounts. Thanks to that, the total cost decreases.

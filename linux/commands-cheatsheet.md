@@ -34,6 +34,7 @@
 - `ping host` - Pings a host and outputs results.
 - `ifconfig` - Displays network information for your machine.
 - `netstat` - Network Statistics.
+- `nslookup` - DNS records for a specific domain. (listing nameservers exp: nslookup -type=ns www.google.com)
 
 ## Disk Usage
 

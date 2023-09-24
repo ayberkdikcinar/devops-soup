@@ -119,4 +119,4 @@ Management for multiple( maybe hundreds) aws accounts.
 - Creation and deletion of the aws accounts can be automatized.
 - Limitation of the operations for the aws accounts via Service Control Policies (SCP)
 - Grouping for the aws accounts that have similar limitations.
-- Consolidated billing for all aws accounts. Thanks to that, the total cost decreases.
+- Consolidated billing for all aws accounts. Thanks to that, the total cost decreases. (More usage = cheaper bills)

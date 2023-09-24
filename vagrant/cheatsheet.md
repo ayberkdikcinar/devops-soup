@@ -26,21 +26,37 @@
 Initialize a new Vagrant project.
 
 - vagrant init
-  Create and boot up a virtual machine.
+
+Create and boot up a virtual machine.
+
 - vagrant up
-  Apply changes made to the Vagrantfile.
+
+Apply changes made to the Vagrantfile.
+
 - vagrant reload
-  Connect the vm via ssh.
+
+Connect the vm via ssh.
+
 - vagrant ssh
-  Gracefully shutdown vm.
+
+Gracefully shutdown vm.
+
 - vagrant halt
-  Delete the vm, but keep the configuration.
+
+Delete the vm, but keep the configuration.
+
 - vagrant destroy
-  Check the status of the vm.
+
+Check the status of the vm.
+
 - vagrant status
-  Run provisioning scripts to configure the vm.
+
+Run provisioning scripts to configure the vm.
+
 - vagrant provision
-  Suspend the virtual machine to save its state and resume it later.
+
+Suspend the virtual machine to save its state and resume it later.
+
 - vagrant suspend
 - vagrant resume
 

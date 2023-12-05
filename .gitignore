@@ -36,3 +36,5 @@ terraform.rc
 node_modules
 *.pem
 pem
+
+.DS_Store

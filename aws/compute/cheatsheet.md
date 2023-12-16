@@ -76,6 +76,23 @@ When many EC2 instances with the same configuration need to be launched for a sp
 - Pay only for the compute time consumed.
 - You can run it for almost everything. Just upload your code and left the rest to the aws Lambda.
 - You can set them for automatic runs or you can call them from your application.
+- Lambda functions can be configured to run up to 15 minutes per execution.
+
+## Function
+
+When you create the Lambda function, it can be authored in several ways:
+
+- You can create the function from scratch.
+- You can use a blueprint that AWS provides.
+- You can select a container image to deploy for your function
+
+# AWS Fargate
+
+Fargate supports both Amazon ECS and Amazon EKS architecture and provides workload isolation and improved security by design.
+
+- Serverless compute engine for containers.
+- Runs containers without managing the underlying infrastructure.
+- Pay only for the resources consumed by your containers.
 
 # AWS Batch
 
@@ -92,12 +109,6 @@ When many EC2 instances with the same configuration need to be launched for a sp
 - Platform as a Service (PaaS) offering.
 - Deploy, manage, and scale applications easily. (Similar to Heroku)
 - Supports various programming languages and platforms.
-
-# AWS Fargate
-
-- Serverless compute engine for containers.
-- Runs containers without managing the underlying infrastructure.
-- Pay only for the resources consumed by your containers.
 
 # AWS App Runner
 

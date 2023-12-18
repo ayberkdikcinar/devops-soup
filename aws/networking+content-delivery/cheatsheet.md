@@ -76,9 +76,18 @@ Amazon CloudFront is a web service that speeds up distribution of your static an
 
 Acts as a bridge between your VPC and the internet, facilitating communication and enabling resources within your VPC to be publicly accessible. It's important to configure appropriate security measures to control access and be aware of any associated costs.
 
+## Virtual Private Gateway
+
+A virtual private gateway connects your VPC to another private network. When you create and attach a virtual private gateway to a VPC, the gateway acts as anchor on the AWS side of the connection. On the other side of the connection, you will need to connect a customer gateway to the other private network. A customer gateway device is a physical device or software application on your side of the connection. When you have both gateways, you can then establish an encrypted virtual private network (VPN) connection between the two sides.
+
+## AWS Direct Connect
+
+To establish a secure physical connection between your on-premises data center and your Amazon VPC, you can use AWS Direct Connect. With AWS Direct Connect, your internal network is linked to an AWS Direct Connect location over a standard Ethernet fiber-optic cable. This connection allows you to create virtual interfaces directly to public AWS services or to your VPC.
+
 ## Security Group
 
 - Resource (EC2 Instances, RDS Instances etc.) level security.
+- As default settings, It blocks all inbound traffic and allows all outbound traffic.
 
 ## Network ACL (Access Control List)
 

@@ -53,13 +53,6 @@ When many EC2 instances with the same configuration need to be launched for a sp
 
 **Note**  Three components of Amazon EC2 Auto Scaling are Launch template, scaling policies, Amazon EC2 Auto Scaling group.
 
-# Amazon LightSail
-
-- Easiest way to have a virtual server and managing it on aws.
-- Fixed price package that includes virtual machine, SSD based storage, DNS Management and static IP.
-- Like a hosting providers (hostinger, godady etc).
-- If your only need is using some virtual machine on the aws platform. That is what you need.
-
 # Amazon ECS (Elastic Container Service)
 
 - Orchestrates and manages Docker containers.
@@ -80,6 +73,7 @@ When many EC2 instances with the same configuration need to be launched for a sp
 - You can run it for almost everything. Just upload your code and left the rest to the aws Lambda.
 - You can set them for automatic runs or you can call them from your application.
 - Lambda functions can be configured to run up to 15 minutes per execution.
+- Lambda functions are stateless, with no affinity to the underlying infrastructure. 
 
 ## Function
 
@@ -105,13 +99,21 @@ Fargate supports both Amazon ECS and Amazon EKS architecture and provides worklo
 - Run large-scale batch computing workloads.
 - Automatically scales resources based on workload demands.
 
-# AWS Elastic Beanstalk
+# AWS Elastic Beanstalk (Similar to Heroku)
 
 [Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)
 
 - Platform as a Service (PaaS) offering.
-- Deploy, manage, and scale applications easily. (Similar to Heroku)
+- Deploy, manage, and scale applications easily.
 - Supports various programming languages and platforms.
+
+# Amazon LightSail
+
+- Easiest way to have a virtual server and managing it on aws.
+- Fixed price package that includes virtual machine, SSD based storage, DNS Management and static IP.
+- Like a hosting providers (hostinger, godady etc).
+- If your only need is using some virtual machine on the aws platform. That is what you need.
+
 
 # AWS App Runner
 

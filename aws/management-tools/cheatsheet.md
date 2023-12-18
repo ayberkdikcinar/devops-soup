@@ -15,6 +15,14 @@ Amazon CloudWatch is a **monitoring and observability** service offered by AWS. 
 - Cross-Account and Cross-Region Monitoring: Monitor multiple accounts and regions.
 - Note: Memory metrics for ec2 is not available.+
 
+### Alarms
+- An alarm can be invoked when it transitions from one state to another. After an alarm is invoked, it can initiate an action. Actions can be an Amazon EC2 action, an automatic scaling action, or a notification sent to Amazon Simple Notification Service (Amazon SNS).
+
+#### Three possible states of an alarm
+- OK: The metric is within the defined threshold. Everything appears to be operating like normal.
+- ALARM (In Alarm): The metric is outside the defined threshold. This might be an operational issue.
+- INSUFFICIENT_DATA: The alarm has just started, the metric is not available, or not enough data is available for the metric to determine the alarm state.
+
 ## Amazon CloudTrail
 
 Amazon CloudTrail is a service provided by Amazon Web Services (AWS) that enables you to monitor and log API activity and account-related events within your AWS infrastructure. It records and stores a history of actions taken by users, services, and resources, providing an audit trail for security analysis, compliance, and troubleshooting purposes.

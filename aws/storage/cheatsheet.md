@@ -38,7 +38,6 @@ Think that you have an e-commerce application that runs on multiple instances. O
 
 ## Amazon EBS
 As the name implies, Amazon Elastic Block Store (Amazon EBS) is block-level storage that you can attach to an Amazon EC2 instance. You can compare this to how you much attach an external drive to your laptop. This attachable storage is called an EBS volume. EBS volumes act similarly to external drives in more than one way.
-- Object based storage.
 - Detachable
 - Distinct
 - Size-limited

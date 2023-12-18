@@ -50,6 +50,9 @@ Target Groups are used to scale and load balance different services of an applic
 
 When many EC2 instances with the same configuration need to be launched for a specific application, a launch template can be created instead of doing it manually. This ensures consistency and reduces errors. For example, if many instances need to be launched in a testing environment, they should all have the same configuration, and a launch template simplifies this process.
 
+
+**Note**  Three components of Amazon EC2 Auto Scaling are Launch template, scaling policies, Amazon EC2 Auto Scaling group.
+
 # Amazon LightSail
 
 - Easiest way to have a virtual server and managing it on aws.

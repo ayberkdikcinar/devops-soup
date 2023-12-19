@@ -62,3 +62,5 @@ This policy has four major JSON elements: Version, Effect, Action, and Resource.
 ```
 
 - This policy uses a Deny effect to block access to Amazon S3 actions, unless the Amazon S3 resource that's being accessed is in account 222222222222. This ensures that any Amazon S3 principals are accessing only the resources that are inside of a trusted AWS account.
+
+

@@ -1,4 +1,4 @@
-## AWS STORAGE
+# AWS STORAGE
 
 AWS storage services are grouped into three categories: file storage, block storage, and object storage. In file storage, data is stored as files in a hierarchy. In block storage, data is stored in fixed-size blocks. And in object storage, data is stored as objects in buckets
 
@@ -75,7 +75,24 @@ To make a volume available outside of the Availability Zone, you can create a sn
 
 Amazon FSx is a fully managed service that offers reliability, security, scalability, and a broad set of capabilities that make it convenient and cost effective to launch, run, and scale high-performance file systems in the cloud. With Amazon FSx, you can choose between four widely used file systems: Lustre, NetApp ONTAP, OpenZFS, and Windows File Server.
 
-## AWS Snow Family
+# Data Transfer And Migration Services
+
+### Aws Transfer Family
+
+The AWS Transfer Family provides fully managed support for file transfers directly into and out of Amazon Simple Storage Service (Amazon S3) or Amazon Elastic File System (Amazon EFS). AWS Transfer Family supports Secure File Transfer Protocol (SFTP), File Transfer Protocol Secure (FTPS), and File Transfer Protocol (FTP).
+
+- You can import your existing user credentials or integrate an identity provider such as Microsoft Active Directory or LDAP.
+- You don't need to modify your applications or run any file transfer protocol infrastructure.
+
+### Aws DataSync
+
+AWS DataSync is an online data transfer service that simplifies, automates, and accelerates moving data between on-premises storage systems and AWS Storage services. It can also transfer data between AWS Storage services.
+
+### Aws Snow Family
 
 - Offline data transfers are performed using AWS Snow Family devices.
 - These services help to physically transport up to exabytes of data into and out of AWS
+
+### Application Migration Service
+
+With AWS Application Migration Service (AWS MGN), formerly CloudEndure Migration, you can quickly realize the benefits of migrating applications to the cloud without changes and with minimal downtime.

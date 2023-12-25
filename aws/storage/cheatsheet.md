@@ -96,3 +96,5 @@ AWS DataSync is an online data transfer service that simplifies, automates, and 
 ### Application Migration Service
 
 With AWS Application Migration Service (AWS MGN), formerly CloudEndure Migration, you can quickly realize the benefits of migrating applications to the cloud without changes and with minimal downtime.
+
+AWS MGN is the primary migration service recommended for lift-and-shift migrations to AWS. 

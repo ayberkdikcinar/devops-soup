@@ -23,6 +23,9 @@ AWS storage services are grouped into three categories: file storage, block stor
 - There are some different storage tiers that suits specific purposes for the S3. Storage tiers list can be found in the folder.
 - You pay for what you use (you don’t have to provision storage in advance).
 - Amazon S3 is not storage attached to compute.
+- Once created, you cannot change a bucket name. 
+- Buckets are permanent storage entities and only removable when they are empty. After deleting a bucket, the name becomes available for reuse by any account after 24 hours if not taken by another account.
+
 
 ## Amazon S3 Glacier
 

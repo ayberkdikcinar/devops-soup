@@ -80,9 +80,10 @@ Each digit is a sum of the following values, which represent different permissio
 - `bg` - Puts a process in the background.
 - `fg` - Puts a process in the foreground.
 - `kill pid` - Kills a process with given pid.
-
+- `kill -9 pid` - Force Kills a process with given pid.
+  
 ## Network
-
+- `netstat -tulpn` - Active ports list.
 - `ping host` - Pings a host and outputs results.
 - `ifconfig` - Displays network information for your machine.
 - `netstat` - Network Statistics.

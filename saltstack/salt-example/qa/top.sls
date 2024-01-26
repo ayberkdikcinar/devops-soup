@@ -1,0 +1,4 @@
+qa:
+  'web*':
+    - users
+    - nginx

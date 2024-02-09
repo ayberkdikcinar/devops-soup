@@ -50,8 +50,7 @@ Target Groups are used to scale and load balance different services of an applic
 
 When many EC2 instances with the same configuration need to be launched for a specific application, a launch template can be created instead of doing it manually. This ensures consistency and reduces errors. For example, if many instances need to be launched in a testing environment, they should all have the same configuration, and a launch template simplifies this process.
 
-
-**Note**  Three components of Amazon EC2 Auto Scaling are Launch template, scaling policies, Amazon EC2 Auto Scaling group.
+**Note** Three components of Amazon EC2 Auto Scaling are Launch template, scaling policies, Amazon EC2 Auto Scaling group.
 
 # Amazon ECS (Elastic Container Service)
 
@@ -73,7 +72,7 @@ When many EC2 instances with the same configuration need to be launched for a sp
 - You can run it for almost everything. Just upload your code and left the rest to the aws Lambda.
 - You can set them for automatic runs or you can call them from your application.
 - Lambda functions can be configured to run up to 15 minutes per execution.
-- Lambda functions are stateless, with no affinity to the underlying infrastructure. 
+- Lambda functions are stateless, with no affinity to the underlying infrastructure.
 
 ## Function
 
@@ -113,7 +112,6 @@ Fargate supports both Amazon ECS and Amazon EKS architecture and provides worklo
 - Fixed price package that includes virtual machine, SSD based storage, DNS Management and static IP.
 - Like a hosting providers (hostinger, godady etc).
 - If your only need is using some virtual machine on the aws platform. That is what you need.
-
 
 # AWS App Runner
 

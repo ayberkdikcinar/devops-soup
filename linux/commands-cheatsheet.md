@@ -8,7 +8,10 @@
 - `touch file` - Creates a new file.
 - `rm file` - Removes a file.
 - `mv file1 file2` - Renames or moves a file from file1 to file2.
-- `cp file1 file2` - Copies a file from file1 to file2.
+- `mv file1 file2` - Renames or moves a file from file1 to file2.
+- `rsync -a <source> <destination>` - Usage of rsync
+- `rsync -a remote_user@remote_host_or_ip:/opt/media/ /opt/media/` - Transfers data from a remote to a local machine. Replace the source and destination to achieve opposite (local to remote).
+- `rsync -a /var/www/public_html/ /var/www/public_html_backup/` - When synchronizing directories.
 - `cp -r directory1 directory2` - Copies a directory and its contents recursively.
 
 ## Directory Operations
@@ -81,8 +84,9 @@ Each digit is a sum of the following values, which represent different permissio
 - `fg` - Puts a process in the foreground.
 - `kill pid` - Kills a process with given pid.
 - `kill -9 pid` - Force Kills a process with given pid.
-  
+
 ## Network
+
 - `netstat -tulpn` - Active ports list.
 - `ping host` - Pings a host and outputs results.
 - `ifconfig` - Displays network information for your machine.
@@ -143,7 +147,7 @@ Each digit is a sum of the following values, which represent different permissio
 - `reboot` - Reboots the system.
 - `halt` - Halts the system.
 
-## Package Manager
+## Package Manager (Ubuntu)
 
 - `sudo apt-get update` - Updates package list.
 - `sudo apt-get upgrade` - Upgrades all upgradable packages.
